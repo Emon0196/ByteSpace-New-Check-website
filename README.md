@@ -2,6 +2,10 @@
 
 ByteSpace is a course marketplace and creator-focused learning platform landing page. This project is a React + TypeScript + Vite website that includes the homepage, course search results, individual course detail pages, creator profile page, and a 404 fallback page for invalid URLs.
 
+## Live Demo
+
+[Visit the deployed website](https://byte-space-new-check-website.vercel.app/)
+
 ## Overview
 
 This website is designed to showcase:
