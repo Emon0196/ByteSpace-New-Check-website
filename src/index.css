@@ -2051,6 +2051,156 @@ input {
   background: #cbfc01;
 }
 
+.not-found-page {
+  background: #fff;
+  color: var(--hero-ink);
+}
+
+.not-found-hero {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  color: var(--hero-white);
+  background: radial-gradient(circle at 50% 18%, rgba(167, 197, 255, 0.25), transparent 28%),
+    linear-gradient(135deg, #0e1d4e 0%, #112d6d 30%, #102a66 100%);
+}
+
+.not-found-hero__grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.18;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.not-found-hero::before,
+.not-found-hero::after {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  pointer-events: none;
+}
+
+.not-found-hero::before {
+  top: -150px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 90px rgba(255, 255, 255, 0.08);
+}
+
+.not-found-hero::after {
+  left: -156px;
+  bottom: -200px;
+  width: 560px;
+  height: 560px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.not-found-hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 96px 0 86px;
+  text-align: center;
+}
+
+.not-found-hero__badge {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.not-found-hero__code {
+  margin-top: 22px;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(96px, 20vw, 220px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 18px 36px rgba(17, 45, 109, 0.35);
+}
+
+.not-found-hero h1 {
+  margin: 18px 0 0;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.not-found-hero p {
+  max-width: 640px;
+  margin: 20px auto 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.not-found-hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.not-found-page__secondary {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  color: var(--hero-white);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.not-found-page__secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 700px) {
+  .not-found-hero {
+    min-height: 540px;
+  }
+
+  .not-found-hero__content {
+    padding-top: 72px;
+  }
+
+  .not-found-hero__actions {
+    flex-direction: column;
+  }
+
+  .not-found-hero__actions > * {
+    width: 100%;
+  }
+}
+
 .testimonials-section {
   position: relative;
   min-height: 784px;
