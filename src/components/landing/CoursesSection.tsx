@@ -16,7 +16,7 @@ interface CoursesSectionProps {
 
 const courseAvatars = [courseAvatarOne, courseAvatarTwo, courseAvatarThree, courseAvatarFour]
 
-export function CourseCard({ course, creatorHref = '/#creators', showDetailsLink = true }: { course: Course; creatorHref?: string; showDetailsLink?: boolean }) {
+export function CourseCard({ course, creatorHref = '/#creators'}: { course: Course; creatorHref?: string; showDetailsLink?: boolean }) {
   const detailsUrl = '/courses/build-digital-asset'
 
   return (
